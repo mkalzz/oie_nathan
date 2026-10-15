@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1117">
+<title>Obrigado, professor() — uma pequena homenagem</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--border:#30363d;--text:#e6edf3;--muted:#9198a1;--green:#3fb950;--blue:#58a6ff;--purple:#bc8cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.topbar{height:60px;display:flex;align-items:center;gap:12px;padding:0 max(16px,calc((100% - 920px)/2));border-bottom:1px solid var(--border);background:#010409}
+.mark{width:30px;height:30px;display:grid;place-items:center;border:1px solid #8b949e;border-radius:50%;font-weight:700}.topbar strong{font-size:14px}.topbar small{margin-left:auto;color:var(--muted);font-size:11px}
+main{max-width:900px;margin:auto;padding:32px 18px 50px}.repo{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:4px}.repo strong{font-size:20px}.public{font-size:11px;border:1px solid var(--border);border-radius:20px;padding:0 8px;color:var(--muted)}.desc{color:var(--muted);margin:0 0 20px;font-size:14px}
+.nav{display:flex;gap:20px;overflow:auto;border-bottom:1px solid var(--border);margin-bottom:20px}.nav span{white-space:nowrap;color:var(--muted);font-size:13px;padding:9px 0}.nav .active{color:var(--text);border-bottom:2px solid #f78166}
+.panel{border:1px solid var(--border);border-radius:9px;overflow:hidden;background:var(--panel);margin:18px 0}.panelhead{padding:10px 14px;border-bottom:1px solid var(--border);display:flex;gap:9px;align-items:center;color:var(--muted);font-size:12px}.dot{height:9px;width:9px;border-radius:50%;background:var(--green)}.file{font-weight:600;color:var(--text)}.hero{padding:26px;background:linear-gradient(130deg,#3fb95010,transparent 55%),var(--panel)}.eyebrow{font:12px ui-monospace,Consolas,monospace;color:var(--green)}
+.codebox{background:#010409;border:1px solid var(--border);border-radius:8px;margin:22px 0 14px;overflow:hidden}.codehead{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--muted);font-size:12px;display:flex;justify-content:space-between}.code{padding:14px;font:13px/1.9 ui-monospace,Consolas,monospace;overflow:auto;white-space:nowrap}.ln{display:inline-block;width:26px;color:#484f58}.kw{color:#ff7b72}.fn{color:#d2a8ff}.str{color:#a5d6ff}.comment{color:#8b949e}.cursor{display:inline-block;width:7px;height:1em;background:var(--green);vertical-align:-2px;animation:blink 1s steps(2,start) infinite}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.btn{border:1px solid var(--border);border-radius:7px;background:#21262d;color:var(--text);padding:9px 13px;font-weight:600;font-size:13px;cursor:pointer;transition:.18s}.btn:hover{border-color:#8b949e;transform:translateY(-1px)}.btn.primary{background:#238636;color:white;border-color:#238636}.note{font-size:12px;color:var(--muted);margin:9px 0 0}
+.hidden{display:none!important}.letter{padding:21px 23px}.letter p{margin:0 0 15px}.letter p:last-child{margin-bottom:0}.signoff{margin-top:24px;color:var(--muted)}.edittools{margin-left:auto}.smallbtn{background:none;border:0;color:var(--blue);cursor:pointer;font-size:12px}.field{display:grid;gap:5px;margin:12px 0}.field label{color:var(--muted);font-size:12px}input,textarea{width:100%;background:#010409;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:10px;font:inherit}textarea{min-height:300px;resize:vertical}
+.end{text-align:center;padding:24px}.end .big{font:clamp(21px,4vw,28px) ui-monospace,Consolas,monospace;color:var(--green)}.end p{color:var(--muted);font-size:14px}.end .actions{justify-content:center}.footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:12px;padding-top:20px}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,15px);opacity:0;background:#238636;color:white;padding:10px 14px;border-radius:8px;font-size:13px;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+.reveal{animation:rise .5s ease both}@keyframes blink{to{visibility:hidden}}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:560px){.topbar{padding:0 13px;height:55px}.topbar small{font-size:10px}main{padding:22px 12px 40px}.hero{padding:20px 15px}.letter{padding:18px 15px}.actions .btn{flex:1 1 100%;padding:11px}.code{font-size:12px;padding:11px}.repo strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="mark">⌘</div><strong>thank-you / professor</strong><small>feito com carinho e um pouco de Python</small></header>
+<main>
+  <div class="repo"><span style="color:var(--muted);font-size:21px">◈</span><strong>obrigado-professor</strong><span class="public">PÚBLICO</span></div>
+  <p class="desc">Um projeto simples. Uma gratidão difícil de colocar em palavras.</p>
+  <nav class="nav"><span class="active">▤ Código</span><span>⑂ Commits</span><span>♡ Gratidão</span></nav>
+  <section class="panel reveal">
+    <div class="panelhead"><span class="dot"></span><span class="file">README.md</span><span style="margin-left:auto">atualizado agora</span></div>
+    <div class="hero">
+      <div class="eyebrow"># PROJETO ESPECIAL · VERSÃO 1.0</div>
+      <div class="codebox"><div class="codehead"><span>agradecimento.py</span><span>Python 3.x</span></div>
+        <div class="code"><span class="ln">1</span><span class="kw">def</span> <span class="fn">agradecer</span>(<span class="str">nathan</span>):<br><span class="ln">2</span>    thankYou = <span class="str">"Neath the grove is a heart, Yaelokre (presta atenção na letra quando for ouvir, por favor)"</span><br><span class="ln">3</span>    <span class="kw">return</span> <span class="str">"'ai que eu nao sou professor', pois eu nao perguntei"</span><span class="cursor"></span></div>
+      </div>
+      <div class="actions"><button class="btn primary" id="run">▶ Executar</button></div>
+      <p class="note" id="runNote">Nenhuma dependência instalada. Só precisava de um motivo para dizer obrigado.</p>
+    </div>
+  </section>
+  <section class="panel hidden" id="letterPanel">
+    <div class="panelhead"><span class="dot" style="background:var(--purple)"></span><span class="file">carta_de_agradecimento.md</span></div>
+    <div class="letter" id="letterDisplay">
+      <p>Hoje é dia 15 de outubro. Dia dos professores.</p>
+      <p>Você até disse que “não era professor”, mas, pra mim, você é muito mais que isso e você sabe disso (espero que saiba, pelo menos...).</p>
+      <p>Eu quero que saiba que eu sou muito grato a você por tudo que me ensinou e por tudo que ainda há de ensinar. E estou falando além do âmbito acadêmico.</p>
+      <p>Sei que pode parecer meio estranho ou que você não entenda isso, mas você é uma baita inspiração pra mim (e não ouse dizer que isso não é bom). Você é uma pessoa muito foda. Tipo, muito mesmo.</p>
+      <p>Você pode não ter noção, mas você despertou sonhos e vontades que eu não tinha. Você me faz querer ir longe, porque você é quem me mostrou que isso é possível.</p>
+      <p>Então saiba que eu me sinto muito sortudo em te ter como professor e, principalmente, como amigo (porque você é sim meu amigo).</p>
+      <p class="signoff">E jamais esqueça que tu te tornas eternamente responsável por aquilo que cativas.</p>
+    </div>
+    </section>
+  <section id="ending" class="panel hidden"><div class="panelhead"><span class="dot"></span><span class="file">commit_final.txt</span></div><div class="end"><div class="big">Commit realizado com sucesso.</div><p>Mensagem registrada. Gratidão sem prazo de validade.<br>Obrigado por ajudar a escrever um capítulo importante dessa história.</p><div class="actions"><button class="btn" id="copy">⎘ Copiar carta</button><button class="btn" id="top">↑ Voltar ao início</button></div></div></section>
+  <div class="footer"><span>feito com curiosidade, código e gratidão</span><span>README: obrigado por tudo.</span></div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $=id=>document.getElementById(id);
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2300)}
+$('run').addEventListener('click',()=>{
+  ['letterPanel','ending'].forEach(id=>$(id).classList.remove('hidden'));
+  $('run').textContent='✓ Executado com sucesso';
+  $('run').disabled=true;
+  $('runNote').textContent='Execução concluída: gratidão retornada com sucesso.';
+  setTimeout(()=>$('letterPanel').scrollIntoView({behavior:'smooth'}),350);
+});
+$('copy').addEventListener('click',async()=>{const txt=[...$('letterDisplay').querySelectorAll('p')].map(p=>p.innerText).join('\n\n');try{await navigator.clipboard.writeText(txt);toast('Carta copiada!')}catch(e){const t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();toast('Carta copiada!')}});
+$('top').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body></html>
